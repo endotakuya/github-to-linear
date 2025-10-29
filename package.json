@@ -1,0 +1,41 @@
+{
+  "name": "github-to-linear",
+  "version": "0.1.0",
+  "description": "Import a single GitHub issue to Linear",
+  "bin": {
+    "github-to-linear": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write ."
+  },
+  "keywords": ["linear", "github", "import", "cli"],
+  "author": "endotakuya",
+  "license": "MIT",
+  "dependencies": {
+    "@linear/sdk": "^38.0.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^20.10.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/endotakuya/github-to-linear"
+  },
+  "homepage": "https://github.com/endotakuya/github-to-linear",
+  "files": [
+    "dist",
+    "README.md",
+    "package.json",
+    "LICENSE"
+  ]
+}
